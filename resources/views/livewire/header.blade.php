@@ -53,7 +53,7 @@
                                                                                         <div class="menu-widget__content">
                                                                                             <h2 class="menu-widget__title">About Our Companies</h2>
                                                                                             <p class="menu-widget__short-desc">Our expertise in engineering and construction drives innovation and excellence across industries.</p>
-                                                                                            <a href="page-about.html" class="menu-widget__link">SEE MORE <i class="ion-arrow-right-c"></i></a>
+                                                                                            <a href="{{ route('about-us.company-history') }}" class="menu-widget__link">SEE MORE <i class="ion-arrow-right-c"></i></a>
                                                                                         </div>
                                                                                     </div>
                                                                                 </li>
@@ -159,9 +159,9 @@
                             <div class="header-bottom-bar">
                                 <div class="header-bottom-bar__left">
                                     <ul class="topbar-info topbar-info--style4">
-                                        <li><a href="tel:18009777880"><i class="ion-ios-telephone"></i> Call Us: (+91) 9942 502 245</a></li>
-                                        <li><a href="mailto:hello@megan.com"><i class="ion-android-map"></i> Email: sample@sample.com</a></li>
-                                        <li><i class="ion-clock"></i> Mon - Fri: 9:00 - 19:00</li>
+                                        <li><a href="tel:+919940088581 "><i class="ion-ios-telephone"></i> Call Us: (+91) 9940 088 581 </a></li>
+                                        <li><a href="mailto:jayveeengineering@gmail.com"><i class="ion-envelope"></i> Email:  jayveeengineering@gmail.com</a></li>
+                                        {{-- <li><i class="ion-clock"></i> Mon - Fri: 9:00 - 19:00</li> --}}
                                     </ul>
                                 </div>
                                 <div class="header-bottom-bar__right">

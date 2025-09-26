@@ -114,5 +114,10 @@ return [
         'address' => env('MAIL_FROM_ADDRESS', 'hello@example.com'),
         'name' => env('MAIL_FROM_NAME', 'Example'),
     ],
+    'contact' => [
+        'driver' => 'single',
+        'path' => storage_path('logs/contact.log'),
+        'level' => env('LOG_LEVEL', 'info'),
+    ],
 
 ];

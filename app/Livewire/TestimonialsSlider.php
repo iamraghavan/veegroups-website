@@ -6,46 +6,45 @@ use Livewire\Component;
 
 class TestimonialsSlider extends Component
 {
-    /**
-     * Each item structure:
-     * [
-     *   'name' => 'John Doe',
-     *   'designation' => 'Founder, X Company',
-     *   'photo' => 'assets/img/testimonial/1.jpg', // relative to /public
-     *   'rating' => 5, // 1..5
-     *   'text' => 'Great service...'
-     * ]
-     */
+
     public array $items = [];
 
     public function mount(array $items = []): void
     {
-        // You can pass $items from the parent view/controller.
-        // Fallback demo data (remove in prod if you always pass items).
         $this->items = $items ?: [
             [
-                'name' => 'Fannie Moreno',
-                'designation' => 'Founder, X Company',
-                'photo' => 'assets/img/testimonial/1.jpg',
-                'rating' => 4,
-                'text' => 'Highly recommended. The team is dedicated and responsive.',
-            ],
-            [
-                'name' => 'David James',
-                'designation' => 'CTO, Y Labs',
-                'photo' => 'assets/img/testimonial/2.jpg',
+                'name' => 'Mr. Babu',
+                'designation' => 'Mahalakshmi Traders',
                 'rating' => 5,
-                'text' => 'Professional staff and accurate solutions delivered on time.',
+                'text' => 'Leading manufacturer of high-quality PEB structures in Tamil Nadu.',
             ],
             [
-                'name' => 'Bryan Freeman',
-                'designation' => 'COO, Z Corp',
-                'photo' => 'assets/img/testimonial/3.jpg',
-                'rating' => 4,
-                'text' => 'Made everything simple and easy for our team.',
+                'name' => 'Mr. Ram Sai',
+                'designation' => 'Shaya Polymers Ltd',
+                'rating' => 5,
+                'text' => 'They provided a thorough explanation of every detail, which gave me confidence throughout the process.',
+            ],
+            [
+                'name' => 'Mr. Vasu Devan',
+                'designation' => 'Pioneer Cold Store & Cladding Pvt Ltd',
+                'rating' => 5,
+                'text' => 'Never seen PEB structures like this in my life—best PEB structure maker in the world.',
+            ],
+            [
+                'name' => 'Mr. Chandramohan',
+                'designation' => 'Dolphin Autocomponents',
+                'rating' => 5,
+                'text' => 'The team’s strong work ethic and strict adherence to safety protocols were evident throughout the project. They completed the shed within the three-month timeframe.',
+            ],
+            [
+                'name' => 'Mr. Jay Kumar',
+                'designation' => 'KA Industries',
+                'rating' => 5,
+                'text' => 'I trust them for any fabrication work—skilled team, fair pricing, and reliable service every time.',
             ],
         ];
     }
+
 
     public function render()
     {

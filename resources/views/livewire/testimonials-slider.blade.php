@@ -25,9 +25,7 @@
                                 @foreach($items as $item)
                                     <div class="swiper-slide">
                                         <div class="testimonial-slider__single-item">
-                                            <div class="testimonial-slider__single-item__image">
-                                                <img src="{{ asset($item['photo']) }}" class="img-fluid" alt="{{ $item['name'] }}">
-                                            </div>
+                                           
                                             <div class="testimonial-slider__single-item__content">
                                                 <h4 class="testimonial-name">
                                                     {{ $item['name'] }}

@@ -9,7 +9,7 @@
 <!--====================  breadcrumb area ====================-->
 <div class="breadcrumb-area breadcrumb-area-bg section-space--inner--80 bg-img"
      @if($background) data-bg="{{ $background }}" @endif
-     style="{{ $bgStyle }}">
+     style="{{ $bgStyle }} background-color:#000 !important; opacity:1.5 !important;">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-sm-6">

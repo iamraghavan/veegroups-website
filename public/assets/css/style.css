@@ -13218,7 +13218,7 @@ a.scroll-top.show {
   width: 100%;
   height: 100%;
   background-color: #000000;
-  opacity: 0.3;
+  opacity: 2.3;
   z-index: -1;
   content: "";
 }

@@ -108,17 +108,17 @@
 
 $projects = [
     [
-        'icon' => 'assets/img/icons/tree.png',
-        'count' => 2000,
-        'title' => 'Power Plants',
-        'subtext' => "With a countrywide network of power plants, we're doing our best to power our community."
+        'icon' => 'assets/img/icons/home.png',
+        'count' => 500,
+        'title' => 'Warehouses',
+        'subtext' => "With a countrywide network of Warehouses, we're doing our best to power our community."
     ],
     [
         'icon' => 'assets/img/icons/home.png',
-        'count' => 3000,
+        'count' => 150,
         'title' => 'Industrial Projects',
         'subtext' => "We have always been proud of what we have accomplished influential changes."
-    ]
+],
 ];
 
 @endphp
@@ -181,7 +181,7 @@ $projects = [
      
       <div class="col-md-6">
          <div class="support-footer__single bg-img" data-bg="assets/img/icons/message.png" style="background-image: url(&quot;assets/img/icons/message.png&quot;);">
-            Email: jayveesepl@gmail.com
+            Email: jayveeengineering@gmail.com
          </div>
       </div>
       <div class="col-md-6">

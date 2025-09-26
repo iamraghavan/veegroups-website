@@ -34,7 +34,7 @@
     <style>
        .hero-video-wrapper{position:relative;width:100%;padding-top:56.25%}@media (max-width:768px){.hero-video-wrapper{padding-top:100%}}@media (min-width:1200px){.hero-video-wrapper{padding-top:0;height:800px}}.hero-video-area video,.hero-video-overlay{position:absolute;top:0;left:0;width:100%;height:100%}.hero-video-area video{object-fit:cover}.hero-video-overlay{background:rgba(0,0,0,.4);z-index:1}
     </style>
-
+ @turnstileScripts()
 </head>
 
 <body>

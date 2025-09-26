@@ -22,7 +22,7 @@
                         <!-- Director -->
                         <div class="leadership__single">
                             <div class="image">
-                                <img src="https://avatar.iran.liara.run/public" class="img-fluid" alt="Mr. UDAYAKUMAR">
+                                <img src="{{ asset('assets/img/jve/leadership/udayakumar.webp') }}" class="img-fluid" alt="Mr. UDAYAKUMAR">
                             </div>
                             <div class="content">
                                 <div class="identity-wrapper has-border-left">
@@ -30,7 +30,7 @@
                                     <span class="designation">Director</span>
                                 </div>
                                 <p class="brief-desc">
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                    Jay Vee Groups is a leading force in engineering, structural design, and construction technology, with a focus on innovation and excellence. Their companies—Jay Vee Engineering, Jay Vee Structural Engineering Pvt Ltd, and Jakuva Build Tech—deliver reliable, cutting-edge solutions across various industries.
                                 </p>
                             </div>
                         </div>
@@ -41,12 +41,12 @@
                                 <img src="https://avatar.iran.liara.run/public" class="img-fluid" alt="Mr. VASIKARAN">
                             </div>
                             <div class="content">
-                                <div class="identity-wrapper has-border-left">
+                                <div class="identity-wrapper has-border-left">  
                                     <h3 class="name">Mr. VASIKARAN</h3>
                                     <span class="designation">Managing Director</span>
                                 </div>
                                 <p class="brief-desc">
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                    Jay Vee Groups, is dedicated to driving innovation, quality, and sustainable growth in every project. With a vision to lead the industry through expertise and cutting-edge technology, he ensures that each company under the Jay Vee umbrella—Jay Vee Engineering, Jay Vee Structural Engineering Pvt Ltd, and Jakuva Build Tech—delivers exceptional results and continues to set new benchmarks in engineering and construction.
                                 </p>
                             </div>
                         </div>

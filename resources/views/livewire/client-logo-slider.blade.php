@@ -18,7 +18,7 @@
                                 </div>
                             @endforeach
                         </div>
-                        <!-- Add pagination/navigation if needed -->
+                        <!-- Add pagination/navigation if needed -->    
                     </div>
                 </div>
             </div>
