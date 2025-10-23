@@ -42,9 +42,13 @@
                     <!-- Download Widget -->
                     <div class="single-sidebar-widget">
                         <h2 class="widget-title">Download</h2>
-                        <ul class="sidebar-download-items">
-                            <li><a href="#"><i class="fa fa-file-pdf-o"></i> <span class="button-text">Company Profile</span></a></li>
-                            <li><a class="dark-download-btn" href="#"><i class="fa fa-file-pdf-o"></i> <span class="button-text">Brochure</span></a></li>
+                      <ul class="sidebar-download-items">
+                            <li><a href="{{ \App\Http\Controllers\CertificationController::signedUrl('certifications.view', 'JAY_VEE_BROUCHER.pdf') }}">
+    <i class="fa fa-file-pdf-o"></i> <span class="button-text">View Brochure</span>
+</a></li><li><a class="dark-download-btn" href="{{ \App\Http\Controllers\CertificationController::signedUrl('certifications.download', 'JAY_VEE_BROUCHER.pdf') }}">
+    Download Brochure
+</a></li>
+                            
                         </ul>
                     </div>
                 </div>

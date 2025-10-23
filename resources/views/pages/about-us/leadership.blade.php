@@ -38,7 +38,7 @@
                         <!-- Managing Director -->
                         <div class="leadership__single">
                             <div class="image">
-                                <img src="https://avatar.iran.liara.run/public" class="img-fluid" alt="Mr. VASIKARAN">
+                                <img src="{{ asset('assets/img/jve/leadership/VASIKARAN.webp') }}" class="img-fluid" alt="Mr. VASIKARAN">
                             </div>
                             <div class="content">
                                 <div class="identity-wrapper has-border-left">  
