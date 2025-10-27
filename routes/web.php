@@ -21,6 +21,9 @@ Route::prefix('companies')->group(function () {
     Route::get('/jay-vee-engineering', [PageController::class, 'jayVeeEngineering'])->name('companies.jay-vee-engineering');
     Route::get('/jay-vee-structural-engineering', [PageController::class, 'jayVeeStructuralEngineering'])->name('companies.jay-vee-structural-engineering');
     Route::get('/jakuva-build-tech', [PageController::class, 'jakuvaBuildTech'])->name('companies.jakuva-build-tech');
+
+
+    Route::get('/safety-measurements/work-safety-measurements', [PageController::class, 'workSafetyMeasurements'])->name('companies.safety-measurements.work-safety-measurements');
 });
 
 Route::prefix('projects')->group(function () {
@@ -34,6 +37,11 @@ Route::prefix('projects')->group(function () {
     Route::get('/project/{id}', [PageController::class, 'projectDetails'])->name('projects.details');
 });
 
+// Peoples -> our-workforce
+
+Route::prefix('peoples')->group(function () {
+    Route::get('/our-workforce', [PageController::class, 'ourWorkforce'])->name('peoples.our-workforce');
+});
 
 Route::get('/contact', [ContactController::class, 'show'])->name('contact.show');
 Route::post('/contact', [ContactController::class, 'send'])

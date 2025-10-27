@@ -7,6 +7,9 @@ use Livewire\Component;
 class Header extends Component
 {
     public $menus = [];
+    public $flatMenus = [];
+    public $search = '';
+    public $results = [];
 
     public function mount()
     {
@@ -41,14 +44,12 @@ class Header extends Component
                     ['label' => 'Construction', 'route' => route('projects.construction')],
                 ],
             ],
-            // [
-            //     'label' => 'People',
-            //     'children' => [
-            //         ['label' => 'Founders', 'route' => '#'],
-            //         ['label' => 'Key Personnel', 'route' => '#'],
-            //         ['label' => 'Our Workforce', 'route' => '#'],
-            //     ],
-            // ],
+            [
+                'label' => 'People',
+                'children' => [
+                    ['label' => 'Our Workforce', 'route' => route('peoples.our-workforce')],
+                ],
+            ],
             [
                 'label' => 'Contact',
                 'route' => route('contact.show'),
@@ -58,7 +59,51 @@ class Header extends Component
                 'route' => route('Certifications'),
             ],
         ];
+
+        // Flatten the menu once
+        $this->flatMenus = $this->flattenMenu($this->menus);
     }
+    private function flattenMenu($menus)
+    {
+        $flat = [];
+
+        foreach ($menus as $menu) {
+            $flat[] = [
+                'label' => $menu['label'],
+                'route' => $menu['route'] ?? '#',
+            ];
+
+            if (isset($menu['children'])) {
+                foreach ($menu['children'] as $child) {
+                    $flat[] = [
+                        'label' => $child['label'],
+                        'route' => $child['route'] ?? '#',
+                    ];
+                }
+            }
+        }
+
+        return $flat;
+    }
+
+    public function updatedSearch()
+    {
+        if (!$this->search) {
+            $this->results = [];
+            return;
+        }
+
+        $this->results = array_filter($this->flatMenus, function ($menu) {
+            return stripos($menu['label'], $this->search) !== false;
+        });
+
+        // Reset array keys to prevent weird rendering
+        $this->results = array_values($this->results);
+
+        // Limit for performance
+        $this->results = array_slice($this->results, 0, 10);
+    }
+
 
     public function render()
     {

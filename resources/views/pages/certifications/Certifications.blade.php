@@ -77,6 +77,10 @@
               'GST_Certificate.pdf',
               'ISO__JAY_VEE_ENGINEERING.pdf',
               'Print_Udyam_Registration_Certificate.pdf',
+              'JAKUVA_BUILD_TECH_Print_Udyam_Registration_Certificate.pdf',
+              'AA330623059760A_RC18072023.pdf',
+              'AA330924031499Z_RC23102024.pdf'
+
           ];
 
           $rows = [];
@@ -107,7 +111,7 @@
                   <tr>
                     <th style="width: 90px;">S.No</th>
                     <th>Name</th>
-                    <th class="w-50">SHA-256</th>
+                    {{-- <th class="w-50">SHA-256</th> --}}
                     <th style="width: 260px;">Actions</th>
                   </tr>
                 </thead>
@@ -123,7 +127,7 @@
                       </div>
                     </td>
 
-                    <td>
+                    {{-- <td>
                       <div class="hash-wrap">
                         <code class="hash-code" title="{{ $row['sha'] }}">{{ $row['sha'] }}</code>
                         @if($row['exists'])
@@ -131,7 +135,7 @@
                                   class="btn btn-sm btn-soft-secondary"
                                   data-copy="{{ $row['sha'] }}"
                                   title="Copy SHA-256">
-                            {{-- copy icon --}}
+                  
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
                               <path d="M4 1a2 2 0 0 0-2 2v7h1V3a1 1 0 0 1 1-1h7V1z"/>
                               <path d="M5 4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h7a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2z"/>
@@ -140,7 +144,7 @@
                           </button>
                         @endif
                       </div>
-                    </td>
+                    </td> --}}
 
                     <td>
                       @if($row['exists'])

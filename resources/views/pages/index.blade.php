@@ -5,7 +5,7 @@
 <div class="hero-video-area">
     <div class="hero-video-wrapper">
         <video autoplay loop muted playsinline preload="auto">
-            <source src="https://cdn.pixabay.com/video/2017/10/21/12543-239934681_large.mp4" type="video/mp4">
+            <source src="https://cdn.jsdelivr.net/gh/egspgoi/jay-vee-groups@main/test/BSHR7436___25.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
         <div class="hero-video-overlay"></div>
@@ -59,7 +59,7 @@
                                 Specializing in structural design and planning, we offer high-quality steel fabrication solutions for modern industrial demands.
                             </p>
                         </div>
-                        <a href="{{ url('service-details') }}" class="post-readmore-btn"><span>READ MORE</span> <i class="ion-android-arrow-forward"></i></a>
+                        <a href="{{ route('companies.jay-vee-structural-engineering') }}" class="post-readmore-btn"><span>READ MORE</span> <i class="ion-android-arrow-forward"></i></a>
                     </div>
                 </div>
 
@@ -102,7 +102,7 @@
 
 
 
-
+<livewire:project-grid-posts />
 
 @php
 

@@ -55,6 +55,13 @@ class PageController extends Controller
         return view('pages.certifications.certifications');
     }
 
+    // workSafetyMeasurements
+
+    public function workSafetyMeasurements()
+    {
+        return view('pages.companies.safety-measurements.work-safety-measurements');
+    }
+
     public function allProjects()
     {
         // Fetch all projects with pagination (6 per page)
@@ -103,5 +110,10 @@ class PageController extends Controller
     {
         $project = Project::findOrFail($id);
         return view('pages.projects.project-details', compact('project'));
+    }
+
+    public function ourWorkforce()
+    {
+        return view('pages.peoples.our-workforce');
     }
 }

@@ -30,7 +30,7 @@
                                                                         <nav>
                                                                             <div class="nav nav-tabs flex-column" id="nav-tab" role="tablist">
                                                                                 <a class="nav-item nav-link active" id="item1-tab" data-bs-toggle="tab" href="#item1" role="tab" aria-selected="true">Company Profiles</a>
-                                                                                <a class="nav-item nav-link" id="item2-tab" data-bs-toggle="tab" href="#item2" role="tab" aria-selected="false" tabindex="-1">Our Services</a>
+                                                                                <a class="nav-item nav-link" id="item2-tab" data-bs-toggle="tab" href="#item2" role="tab" aria-selected="false" tabindex="-1">Safety Measurements</a>
                                                                             </div>
                                                                         </nav>
                                                                     </li>
@@ -62,17 +62,10 @@
                                                                         <div class="tab-pane" id="item2" role="tabpanel" aria-labelledby="item2-tab">
                                                                             <ul class="menu-item-list-desc">
                                                                                 <li class="menu-item-list-desc__single">
-                                                                                    <h6 class="title"><a href="#">Engineering Solutions</a></h6>
-                                                                                    <p class="desc">Comprehensive engineering services for industrial and structural projects.</p>
+                                                                                    <h6 class="title"><a href="{{ route('companies.safety-measurements.work-safety-measurements') }}">Work Safety Measurements</a></h6>
+                                                                                    <p class="desc">Conduct initial and periodic workplace inspections of the workplace to identify new or recurring hazards</p>
                                                                                 </li>
-                                                                                <li class="menu-item-list-desc__single">
-                                                                                    <h6 class="title"><a href="#">Construction Management</a></h6>
-                                                                                    <p class="desc">Expert management for seamless project execution.</p>
-                                                                                </li>
-                                                                                <li class="menu-item-list-desc__single">
-                                                                                    <h6 class="title"><a href="#">Build Tech Innovations</a></h6>
-                                                                                    <p class="desc">Cutting-edge solutions for modern construction challenges.</p>
-                                                                                </li>
+                                                                                
                                                                             </ul>
                                                                         </div>
                                                                     </li>
@@ -166,10 +159,30 @@
                                 </div>
                                 <div class="header-bottom-bar__right">
                                     <div class="header-search--style5">
-                                        <form action="#">
-                                            <input type="text" placeholder="Keyword search..." spellcheck="false" data-ms-editor="true">
-                                            <button type="submit"><i class="ion-ios-search-strong"></i></button>
-                                        </form>
+                   <div style="position: relative;">
+    <input 
+        type="text" 
+        placeholder="Keyword search..." 
+        spellcheck="false" 
+        wire:model.debounce.300ms="search"
+        autocomplete="off"
+    >
+    
+    @if(!empty($search) && count($results) > 0)
+        <ul class="search-results">
+            @foreach($results as $result)
+                <li>
+                    <a href="{{ $result['route'] ?? '#' }}">
+                        {{ $result['label'] }}
+                    </a>
+                </li>
+            @endforeach
+        </ul>
+    @endif
+</div>
+
+
+
                                     </div>
                                     
                                     <div class="call-now-wrapper">
