@@ -49,7 +49,7 @@
                 <div class="col-md-4">
                     <div class="contact-location-grid__single">
                         <div class="contact-location-grid__content">
-                            <h2 class="title">JAY VEE STRUCTURALS</h2>
+                            <h2 class="title">JAY VEE STRUCTURALS ENGINEERING PVT LTD</h2>
                             <ul class="info-list">
                                 <li class="email"><strong>Email:</strong> jayveesepl@gmail.com</li>
                                 <li class="phone"><strong>Phone:</strong> +91 99400 88581, 89394 55585, 8072141341</li>

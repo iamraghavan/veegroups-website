@@ -21,7 +21,7 @@ class ProjectGridPosts extends Component
                 'phone' => null,
                 'email' => null,
                 'map' => 'https://maps.app.goo.gl/Ae9ZcXWSHBTPJacm9',
-                'img' => null,
+                'img' => 'https://cdn.jsdelivr.net/gh/iamraghavan/veegroups-website@main/public/assets/img/jve/unit_1.webp',
             ],
             [
                 'id' => 2,
@@ -31,7 +31,7 @@ class ProjectGridPosts extends Component
                 'phone' => null,
                 'email' => null,
                 'map' => 'https://maps.app.goo.gl/m4hQuvVmg8jZmsGg7',
-                'img' => null,
+                'img' => 'https://cdn.jsdelivr.net/gh/iamraghavan/veegroups-website@main/public/assets/img/jve/unit_2.webp',
             ],
         ];
 

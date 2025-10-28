@@ -32,7 +32,7 @@
                 <div class="banner-image-three__right">
                     <div class="banner-image-three__image">
                         <div class="banner-image">
-                            <img src="{{ asset('assets/img/banner/banner11.jpg') }}" class="img-fluid" alt="JAY VEE Banner">
+                            <img src="{{ asset('assets/img/jve/bg/about_us_jve.webp') }}" class="img-fluid" alt="JAY VEE Banner">
                             {{-- <div class="banner-sign">
                                 <img src="{{ asset('assets/img/icons/sign.png') }}" class="img-fluid" alt="Signature">
                             </div> --}}
@@ -79,7 +79,7 @@
 
                 <!-- JAKUVA BUILD TECH -->
                 <div class="single-industry-grid-two">
-                    <div class="single-industry-grid-two__image bg-img" data-bg="{{ asset('assets/img/jve/bg/construction.webp') }}" style="background-image: url('{{ asset('assets/img/industry/3-960x430.jpg') }}');"></div>
+                    <div class="single-industry-grid-two__image bg-img" data-bg="{{ asset('assets/img/jve/bg/construction_1.webp') }}" style="background-image: url('{{ asset('assets/img/industry/3-960x430.jpg') }}');"></div>
                     <div class="single-industry-grid-two__content">
                         <div class="content-wrapper">
                             <h2 class="title"><a href="#">Jakuva <span class="highlight">Build Tech</span></a></h2>
