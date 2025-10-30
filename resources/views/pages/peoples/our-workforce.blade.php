@@ -26,7 +26,7 @@
                     <div class="testimonial-single__wrapper">
 
                         <!-- JAYATHARINI (C.E.O) -->
-                        <div class="testimonial-single__item">
+                        <!-- <div class="testimonial-single__item">
                             <div class="testimonial-slider__single-item testimonial-slider__single-item--style2">
                                 <div class="testimonial-slider__single-item__image">
                                     <img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXeHSsU4DDOzHHo3witNlviBE1IKM9Up-DeGx4KS6Z3my7wKR_KfJBwlCpxJc1S69Fm5OTwdcDP7fKGtM5OPqrJg5w3GSHajkogIet8XM05q6wm3o8JAXFy4NFrwgOkoFFOoh2t2jUkOsJJ5xHrMXA?key=H4VSBsxU_-f8f3pTqBsmYg" class="img-fluid" alt="JAYATHARINI">
@@ -36,7 +36,7 @@
                                     <p class="text">As we continue to grow and evolve, our focus remains clear — delivering excellence, embracing innovation, and staying deeply committed to our clients, partners, and people. With a clear vision and strong industry knowledge, we have successfully become a leader in pre-engineered buildings and industrial construction, setting new standards for quality and innovation.</p>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
 
                         <!-- SATHIYA K (OPERATION MANAGER) -->
                         <div class="testimonial-single__item">
